@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathan Taka Tsaga | Software Engineering Student</title>
+  <meta name="description" content="Personal portfolio of Nathan Taka Tsaga — Software Engineering student at the University of Ottawa." />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts: Syne (display) + Fira Code (mono accents) + Outfit (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       LOADING SCREEN
+  ======================== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-code"><span class="loader-bracket">&lt;</span>NTT<span class="loader-bracket">/&gt;</span></div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-label">Initialising portfolio…</p>
+    </div>
+  </div>
+
+  <!-- ========================
+       NAVIGATION
+  ======================== -->
+  <nav id="navbar" class="navbar">
+    <a href="#hero" class="nav-logo"><span class="bracket">&lt;</span>NTT<span class="bracket">/&gt;</span></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#education"  class="nav-link">Education</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========================
+       HERO SECTION
+  ======================== -->
+  <section id="hero" class="hero">
+    <!-- Decorative grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+     
+      <h1 class="hero-name">
+        Nathan<br /><span class="gradient-text">Taka Tsaga</span>
+      </h1>
+      <div class="hero-role">
+        <span class="fira role-prefix">&gt;&nbsp;</span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-intro">
+         Software Engineering student at the <strong>University of Ottawa</strong> — building real things, learning fast, and turning ideas into code.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">1</span>
+          <span class="stat-label">Internship</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Curiosity</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-hint-text fira">scroll</span>
+      <div class="scroll-hint-mouse"><div class="scroll-hint-dot"></div></div>
+    </a>
+  </section>
+
+  <!-- ========================
+       ABOUT SECTION
+  ======================== -->
+  <section id="about" class="section about reveal">
+    <div class="container">
+      <h2 class="section-title">Who I Am?</h2>
+
+      <div class="about-grid">
+        <!-- Avatar card -->
+        <div class="about-avatar-wrap reveal-left">
+          <div class="about-avatar">
+            <div class="avatar-placeholder">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="avatar-badge">
+              <i class="fas fa-map-marker-alt"></i> Ottawa, Canada
+            </div>
+          </div>
+          <!-- Decorative code snippet -->
+          <div class="about-code-card glass">
+           
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal-right">
+          <p class="about-desc">
+            I'm <strong>Nathan Taka Tsaga</strong>, a first-year Software Engineering student in the co-operative program at the University of Ottawa. Originally from Douala, Cameroon, I made the leap to Canada driven by one goal: becoming an engineer who builds technology that actually matters.
+          </p>
+          <p class="about-desc">
+            I'm fascinated by the intersection of clean code and elegant design. Whether it's crafting a responsive UI from scratch or tracing through a tricky algorithm, I love the problem-solving journey. My background in customer service has taught me that the best software — like the best service — is built with empathy.
+          </p>
+
+          <div class="about-goals">
+            <div class="goal-item">
+              <div class="goal-icon"><i class="fas fa-bullseye"></i></div>
+              <div>
+                <h4>Short-term goal</h4>
+                <p>Land a meaningful co-op in web or software development and ship real product features.</p>
+              </div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-icon"><i class="fas fa-star"></i></div>
+              <div>
+                <h4>Long-term vision</h4>
+                <p>Build scalable software that improves people's lives — with a special interest in EdTech and FinTech for emerging markets.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-interests">
+            <span class="tag"><i class="fas fa-code"></i> Web Dev</span>
+            <span class="tag"><i class="fas fa-brain"></i> Algorithms</span>
+            <span class="tag"><i class="fas fa-mobile-alt"></i> UI/UX</span>
+            <span class="tag"><i class="fas fa-globe-africa"></i> EdTech</span>
+            <span class="tag"><i class="fas fa-coffee"></i> Coffee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       SKILLS SECTION
+  ======================== -->
+  <section id="skills" class="section skills reveal">
+    <div class="container">
+      <h2 class="section-title">What I Know</h2>
+      <p class="section-sub">Technologies I work with — progress reflects my current comfort level, not perfection.</p>
+
+      <div class="skills-grid">
+        <!-- Technical skills with animated bars -->
+        <div class="skills-col reveal-left">
+          <h3 class="skills-col-title"><i class="fas fa-laptop-code"></i> Technical</h3>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-html5" style="color:#e34c26"></i> HTML5</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-css3-alt" style="color:#264de4"></i> CSS3</span>
+              <span class="skill-pct">30%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-js-square" style="color:#f7df1e"></i> JavaScript</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-python" style="color:#3776ab"></i> Python</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-git-alt" style="color:#f05032"></i> Git / GitHub</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+        </div>
+
+        <!-- Soft skills / tools -->
+        <div class="skills-col reveal-right">
+          <h3 class="skills-col-title"><i class="fas fa-users-cog"></i> Soft Skills & Tools</h3>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-puzzle-piece" style="color:#a78bfa"></i> Problem Solving</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-people-carry" style="color:#34d399"></i> Teamwork</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-comments" style="color:#f472b6"></i> Communication</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-terminal" style="color:#22d3ee"></i> VS Code / CLI</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-language" style="color:#fbbf24"></i> French / English</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech icon cloud -->
+      <div class="tech-cloud reveal">
+        <div class="tech-bubble"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="tech-bubble"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="tech-bubble"><i class="fab fa-js-square"></i><span>JS</span></div>
+        <div class="tech-bubble"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="tech-bubble"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="tech-bubble"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="tech-bubble"><i class="fas fa-terminal"></i><span>Bash</span></div>
+        <div class="tech-bubble"><i class="fas fa-database"></i><span>SQL</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       PROJECTS SECTION
+  ======================== -->
+  <section id="projects" class="section projects reveal">
+    <div class="container">
+      <div class="section-tag fira"></div>
+      <h2 class="section-title">What I've Built</h2>
+      <p class="section-sub">A selection of personal projects — each one a lesson learned and a skill levelled up.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="--ph-color: #f59e0b;">
+              <img src="Demo_Quizzz.png"></img>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/TakaNathan/Quizzz/" class="proj-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://takanathan.github.io/Quizzz/" class="proj-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <span class="project-num fira">02</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Quizzz</h3>
+            <p class="project-desc">A site to upgrade your knowledges about topics like Geography,Science and History.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/TakaNathan/Quizzz/" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://takanathan.github.io/Quizzz/" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+         <article class="project-card glass reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <img src="Demo_Azertype.png">
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/TakaNathan/Azertype2" class="proj-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://takanathan.github.io/Azertype2/" class="proj-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <span class="project-num fira">01</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AZERTYPE</h3>
+            <p class="project-desc">A website to learn well how to use the keyboard by typing's exercises .</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/TakaNathan/Azertype2" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://takanathan.github.io/Azertype2/" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+        
+
+        <!-- Project 3 -->
+        <article class="project-card glass reveal featured-card">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="--ph-color: #8b5cf6;">
+              <i class="fas fa-id-card"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="proj-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <span class="project-num fira">03</span>
+            <span class="featured-badge">Featured</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">This very portfolio! Designed and built from scratch — dark themed, animated, fully responsive. Features scroll reveal, typed effect, animated skill bars, and a contact form.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Animations</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="--ph-color: #10b981;">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="proj-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <span class="project-num fira">04</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">To-Do List App</h3>
+            <p class="project-desc">A persistent task manager with add/delete/complete features, priority tags, and localStorage to save data between sessions. Clean UI with smooth transitions.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>localStorage</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       EXPERIENCE SECTION
+  ======================== -->
+  <section id="experience" class="section experience reveal">
+    <div class="container">
+      <div class="section-tag fira"></div>
+      <h2 class="section-title">Where I've Worked</h2>
+
+      <div class="timeline">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i class="fas fa-code"></i></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Software Engineering Intern</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Sigeris SARL &nbsp;·&nbsp; Bafoussam, Cameroon</p>
+              </div>
+              <span class="tl-date fira">2025</span>
+            </div>
+            <ul class="tl-duties">
+              <li>Assisted in developing and maintaining internal web tools using HTML, CSS, and JavaScript.</li>
+              <li>Documented software features and contributed to internal wiki pages for knowledge sharing.</li>
+              <li>Debugged UI bugs and improved form validation across multiple internal pages.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i class="fas fa-utensils"></i></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Customer Service Representative</h3>
+                <p class="tl-company"><i class="fas fa-store"></i> Restaurant "Tchop Et Yamo" &nbsp;·&nbsp; Douala, Cameroon</p>
+              </div>
+              <span class="tl-date fira">2024 – 2025</span>
+            </div>
+            <ul class="tl-duties">
+              <li>Delivered fast, friendly service in a high-pressure, high-volume environment.</li>
+              <li>Managed orders, handled payments, and resolved customer complaints efficiently.</li>
+              <li>Collaborated with kitchen and floor staff to maintain smooth operations.</li>
+              <li>Developed strong communication, empathy, and multitasking skills.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Communication</span><span>Teamwork</span><span>Problem Solving</span><span>Adaptability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       EDUCATION SECTION
+  ======================== -->
+  <section id="education" class="section education reveal">
+    <div class="container">
+      <div class="section-tag fira"></div>
+      <h2 class="section-title">My Academic Path</h2>
+
+      <div class="edu-cards">
+
+        <div class="edu-card glass reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-body">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Bachelor of Software Engineering (Co-op)</h3>
+                <p class="edu-school">University of Ottawa &nbsp;·&nbsp; Ottawa, ON, Canada</p>
+              </div>
+              <span class="edu-date fira"> Fall 2026 – Present</span>
+            </div>
+            <p class="edu-desc">
+              French-language cooperative engineering program. Coursework covers data structures, algorithms, software design, mathematics, and systems programming. The co-op track alternates study semesters with paid work terms, giving students real-world experience alongside their degree.
+            </p>
+            <div class="edu-highlights">
+              <div class="edu-hl"><i class="fas fa-check-circle"></i> Co-operative Education Program</div>
+              <div class="edu-hl"><i class="fas fa-check-circle"></i> Taught in French</div>
+              <div class="edu-hl"><i class="fas fa-check-circle"></i> International Student Scholarship</div>
+              <div class="edu-hl"><i class="fas fa-check-circle"></i> Active member of the engineering community</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card glass reveal">
+          <div class="edu-icon" style="--edu-icon-color: #f59e0b;"><i class="fas fa-school"></i></div>
+          <div class="edu-body">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">High School Diploma — Sciences</h3>
+                <p class="edu-school">GBHS Tougang II &nbsp;·&nbsp; Bafoussam, Cameroon</p>
+              </div>
+              <span class="edu-date fira">Graduated 2024</span>
+            </div>
+            <p class="edu-desc">
+              Completed the Cameroonian national baccalauréat exam in the sciences stream, with strong results in mathematics, physics, and computer science — the foundation for engineering studies abroad.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       CONTACT SECTION
+  ======================== -->
+  <section id="contact" class="section contact reveal">
+    <div class="container">
+      <div class="section-tag fira"></div>
+      <h2 class="section-title">Let's Talk</h2>
+      <p class="section-sub">I'm actively looking for co-op opportunities. Whether it's a question, an opportunity, or just a hello — my inbox is always open.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="contact-info reveal-left">
+          <h3 class="contact-info-title">Get in touch</h3>
+
+          <div class="contact-links">
+            <a href="mailto:nathantaka61@gmail.com" class="contact-link glass">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="cl-label">Email</p>
+                <p class="cl-value">nathantaka61@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/nathan-taka-3999683b3/" class="contact-link glass" target="_blank" rel="noopener noreferrer">
+              <div class="contact-link-icon" style="--cl-color: #0a66c2;"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <p class="cl-label">LinkedIn</p>
+                <p class="cl-value">linkedin.com/nathantaka/</p>
+              </div>
+            </a>
+            <a href="https://github.com/TakaNathan/" class="contact-link glass" target="_blank" rel="noopener noreferrer">
+              <div class="contact-link-icon" style="--cl-color: #ffffff;"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="cl-label">GitHub</p>
+                <p class="cl-value">github.com/nathantakatsaga</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="availability-badge">
+            <span class="availability-dot"></span>
+            <span>Available for co-op — Summer 2027</span>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <a href="#hero" class="footer-logo"><span class="bracket">&lt;</span>NTT<span class="bracket">/&gt;</span></a>
+
+      <p class="footer-copy">
+        Designed &amp; built by <strong>Nathan Taka Tsaga</strong> &copy; <span id="year"></span>
+      </p>
+
+      <div class="footer-social">
+        <a href="mailto:nathantaka61@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/nathan-taka-3999683b3/" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/TakaNathan/" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="footer-heart fira">crafted with <i class="fas fa-heart" style="color:#f472b6"></i> &amp; lots of ☕</p>
+  </footer>
+
+  <!-- ========================
+       BACK TO TOP BUTTON
+  ======================== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
